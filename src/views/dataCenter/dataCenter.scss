@@ -1,0 +1,39 @@
+.dataCenter {
+  .dataCenterHead {
+    display: flex;
+    justify-content: space-between;
+
+    :nth-child(n) {
+      width: 30%;
+    }
+
+    .dataCenterHeadLeft {
+      font-size: 16px;
+    }
+
+    .dataCenterHeadCenter {
+      text-align: center;
+
+      span {
+        font-size: 26px;
+        font-weight: 800;
+      }
+    }
+
+    .dataCenterHeadRight {
+      font-size: 16px;
+      text-align: end;
+    }
+  }
+
+  .dataCenterContent {
+
+    margin-top: 20px;
+    padding: 0 15px;
+
+    .echartTitle {
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+}
