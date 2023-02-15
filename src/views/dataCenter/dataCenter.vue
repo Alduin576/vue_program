@@ -9,7 +9,7 @@
         <span>数据中心</span>
       </div>
       <div class="dataCenterHeadRight">
-        <span>存放日期时间</span>
+        <span>{{ time }}</span>
       </div>
     </div>
     <el-row class="dataCenterContent">
@@ -28,8 +28,8 @@
       </div>
       <div class="dataCenterContentCenter">
         <div class="el-col el-col-12">
-          <div class="RoomSurvey">
-            <div class="echartTitle">房间类型</div>
+          <div class="overallEvaluation">
+            <div class="echartTitle">用户总体评价</div>
             <echartPie></echartPie>
           </div>
         </div>
@@ -48,11 +48,31 @@
 
 <script>
 import echartPie from '@/components/echart/echartPie.vue'
-import echartColumnar from '@/components/echart/echatColumnar.vue'
+import echartColumnar from '@/components/echart/echartColumnar.vue'
 export default {
   name: 'dataCenter',
   components: {
     echartPie, echartColumnar
+  },
+  data () {
+    return {
+      time: ''
+    }
+  },
+  methods: {
+  },
+  // 实例挂载就会执行
+  mounted () {
+    setInterval(() => {
+      let date = new Date()
+      let hour = date.getHours()
+      hour = hour >= 10 ? hour : `0${hour}`
+      let minute = date.getMinutes()
+      minute = minute < 10 ? `0${minute}` : minute
+      let second = date.getSeconds()
+      second = second < 10 ? `0${second}` : second
+      this.time = `${hour}:${minute}:${second}`
+    }, 1000)
   }
 }
 </script>

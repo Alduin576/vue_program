@@ -8,6 +8,7 @@
       <div class="header-right">
         <!-- 大屏↓ -->
         <div>数据中心</div>
+        <div>服务中心</div>
         <div>个人中心</div>
         <div>Chinese</div>
         <div>退出</div>
