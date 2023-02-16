@@ -55,14 +55,14 @@ export default {
     echartPie,
     echartColumnar,
   },
-  data() {
+  data () {
     return {
       time: "",
     };
   },
   methods: {},
   // 实例挂载就会执行
-  mounted() {
+  mounted () {
     setInterval(() => {
       let date = new Date();
       let hour = date.getHours();
@@ -78,5 +78,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./dataCenter.scss";
+@import './dataCenter.scss';
 </style>

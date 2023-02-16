@@ -18,8 +18,14 @@ const routes = [
     redirect: '/homepage',
     children: [
       { path: '/homepage', name: 'homepage', component: homepage },
-      { path: '/dataCenter', name: 'dataCenter', component: dataCenter }
+      { path: '/dataCenter', name: 'dataCenter', component: dataCenter },
+      { path: '/serviceCenter', name: 'service', component: serviceCenter }
     ]
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: login
   }
 ]
 

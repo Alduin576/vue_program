@@ -1,14 +1,16 @@
 .dataCenter {
+  margin: 20px 20px;
   .dataCenterHead {
     display: flex;
     justify-content: space-between;
 
     :nth-child(n) {
+      color: cornflowerblue;
       width: 30%;
     }
 
     .dataCenterHeadLeft {
-      font-size: 16px;
+      font-size: 20px;
     }
 
     .dataCenterHeadCenter {
@@ -21,19 +23,25 @@
     }
 
     .dataCenterHeadRight {
-      font-size: 16px;
+      font-size: 20px;
       text-align: end;
     }
   }
 
   .dataCenterContent {
-
     margin-top: 20px;
     padding: 0 15px;
+
+    .RoomSurvey {
+      margin-top: 60px;
+      margin-bottom: 80px;
+    }
 
     .echartTitle {
       font-size: 24px;
       font-weight: 600;
+      text-align: center;
+      color: cornflowerblue;
     }
   }
 }

@@ -6,9 +6,7 @@
         <h1>{{ zh_title }}&nbsp;&nbsp;{{ en_title }}</h1>
       </div>
       <div class="header-right">
-        <div v-for="(item,index) in menuDate"
-             :key="index"
-             @click="changeMenu(item,index)">
+        <div v-for="(item,index) in menuDate" :key="index" @click="changeMenu(item,index)">
           {{item.name}}
         </div>
       </div>
@@ -59,5 +57,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./layout.scss";
+@import './layout.scss';
 </style>

@@ -37,7 +37,8 @@ export default {
           left: "4%",
           top: "18%",
           right: "5%",
-          bottom: "22%"
+          bottom: "22%",
+          width: 600
         },
         legend: {
           data: ["昨日总人数", "今日实时人数", "昨日使用率"],

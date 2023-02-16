@@ -1,9 +1,16 @@
 <template>
-  <div></div>
+  <div class="serviceCenter">
+  </div>
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'serviceCenter',//服务中心
+  data () {
+    return {
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped>
