@@ -25,29 +25,29 @@
 </template>
 
 <script>
-export default {
-  name: 'education-layout',
-  data () {
-    return {
-      time: '',
+  export default {
+    name: 'education-layout',
+    data () {
+      return {
+        time: '',
+      }
+    },
+    mounted () {
+      // 设置实时时间
+      setInterval(() => {
+        let date = new Date()
+        let hour = date.getHours()
+        let minute = date.getMinutes()
+        let second = date.getSeconds()
+        hour = hour < 10 ? `0${hour}` : hour
+        minute = minute < 10 ? `0${minute}` : minute
+        second = second < 10 ? `0${second}` : second
+        this.time = `${hour}:${minute}:${second}`
+      }, 1000)
     }
-  },
-  mounted () {
-    // 设置实时时间
-    setInterval(() => {
-      let date = new Date()
-      let hour = date.getHours()
-      let minute = date.getMinutes()
-      let second = date.getSeconds()
-      hour = hour < 10 ? `0${hour}` : hour
-      minute = minute < 10 ? `0${minute}` : minute
-      second = second < 10 ? `0${second}` : second
-      this.time = `${hour}:${minute}:${second}`
-    }, 1000)
   }
-}
 </script>
 
 <style lang="scss" scoped>
-@import './layout.scss'
+  @import './layout.scss'
 </style>
