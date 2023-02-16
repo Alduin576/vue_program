@@ -47,36 +47,36 @@
 </template>
 
 <script>
-import echartPie from '@/components/echart/echartPie.vue'
-import echartColumnar from '@/components/echart/echartColumnar.vue'
+import echartPie from "@/components/echart/echartPie.vue";
+import echartColumnar from "@/components/echart/echartColumnar.vue";
 export default {
-  name: 'dataCenter',
+  name: "dataCenter",
   components: {
-    echartPie, echartColumnar
+    echartPie,
+    echartColumnar,
   },
-  data () {
+  data() {
     return {
-      time: ''
-    }
+      time: "",
+    };
   },
-  methods: {
-  },
+  methods: {},
   // 实例挂载就会执行
-  mounted () {
+  mounted() {
     setInterval(() => {
-      let date = new Date()
-      let hour = date.getHours()
-      hour = hour >= 10 ? hour : `0${hour}`
-      let minute = date.getMinutes()
-      minute = minute < 10 ? `0${minute}` : minute
-      let second = date.getSeconds()
-      second = second < 10 ? `0${second}` : second
-      this.time = `${hour}:${minute}:${second}`
-    }, 1000)
-  }
-}
+      let date = new Date();
+      let hour = date.getHours();
+      hour = hour >= 10 ? hour : `0${hour}`;
+      let minute = date.getMinutes();
+      minute = minute < 10 ? `0${minute}` : minute;
+      let second = date.getSeconds();
+      second = second < 10 ? `0${second}` : second;
+      this.time = `${hour}:${minute}:${second}`;
+    }, 1000);
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-@import './dataCenter.scss';
+@import "./dataCenter.scss";
 </style>
