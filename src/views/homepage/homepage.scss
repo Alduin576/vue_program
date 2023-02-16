@@ -5,6 +5,12 @@
   justify-content: center;
   padding: 20px 60px;
   position: relative;
+  top: 200px;
+
+  // 设置字体
+  font-size: 24px;
+  color: #000;
+  font-weight: 700;
 
   .option-buttonUp {
     width: 50%;
@@ -12,6 +18,10 @@
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
     grid-template-rows: 2fr;
+
+    :hover {
+      cursor: pointer;
+    }
 
     :nth-child(n) {
       width: 150px;
@@ -31,6 +41,10 @@
     grid-template-rows: 2fr;
     position: relative;
     left: -10px;
+
+    :hover {
+      cursor: pointer;
+    }
 
     :nth-child(n) {
       height: 140px;
