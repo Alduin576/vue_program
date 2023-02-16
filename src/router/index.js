@@ -3,17 +3,19 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-const layout = () => import('@/views/layout/layout.vue')
-const homepage = () => import('@/views/homepage/homepage.vue')
+const layout = () => import('@/views/layout/layout.vue') // 布局页面
+const homepage = () => import('@/views/homepage/homepage.vue') // 首页
+const schoolInfo = () => import('@/views/schoolInfo/schoolIntro.vue') // 学校简介
 
 const routes = [
   {
     path: '/',
-    name: 'education-layout',
+    name: 'campus-layout',
     component: layout,
     redirect: '/homepage',
     children: [
-      { path: '/homepage', name: 'homepage', component: homepage }
+      { path: '/homepage', name: 'homepage', component: homepage },
+      { path: '/schoolIntro', name: 'schoolInfo', component: schoolInfo }
     ]
   }
 ]
