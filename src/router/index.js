@@ -4,12 +4,17 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 const layout = () => import('@/views/layout/layout.vue')
+const homepage = () => import('@/views/homepage/homepage.vue')
 
 const routes = [
   {
     path: '/',
     name: 'education-layout',
-    component: layout
+    component: layout,
+    redirect: '/homepage',
+    children: [
+      { path: '/homepage', name: 'homepage', component: homepage }
+    ]
   }
 ]
 

@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
+// 引入element-ui
+import './plugins/elementui'
 import router from './router'
 
 Vue.config.productionTip = false

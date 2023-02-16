@@ -1,1 +1,55 @@
-.educationLayout {}
+.campusLayout {
+  width: 99%;
+  height: 98.6%;
+  background: url(../../assets/image/campus-bg.png) no-repeat;
+  background-size: cover;
+  background-position: top;
+  margin: 0;
+  margin-left: 2px;
+  padding: 0;
+  position: absolute;
+
+  .campusLayouttHead {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 39px;
+
+    .title {
+      text-align: center;
+      font-size: 30px;
+      color: rgb(118, 118, 124);
+      font-weight: 800;
+    }
+
+
+    .headRight {
+      width: 16%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+
+      :nth-child(1) {
+        padding-top: 4px;
+        font-style: italic;
+      }
+    }
+  }
+
+  // 内容区  content
+  .campusLayoutContent {
+    padding: 20px 40px;
+
+    // 面包屑
+    // .breadNav {
+    //   .el-breadcrumb {
+    //     font-size: 17px;
+    //     line-height: 2;
+    //   }
+    // }
+  }
+}
