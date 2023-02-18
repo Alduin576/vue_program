@@ -1,0 +1,18 @@
+.homepage {
+  display: flex;
+
+  .leftSideBar {
+    width: 150px;
+    .el-menu-vertical-demo:not(.el-menu--collapse) {
+      width: 200px;
+      min-height: 400px;
+    }
+    ul.el-menu-vertical-demo {
+      height: 760px;
+    }
+  }
+  .rightContent {
+    height: 80%;
+    width: 80%;
+  }
+}
