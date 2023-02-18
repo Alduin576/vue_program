@@ -1,11 +1,13 @@
 .hotelLayout {
   width: 99.1%;
   height: 99.1%;
+  background: url('../../assets/image/layout-bg2.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  background-origin: border-box;
 
   .hotelLayoutHeader {
-    background: url('../../assets/image/layout-bg2.png') no-repeat;
-    background-size: cover;
-    background-position: center;
     padding: 5px 20px;
     display: flex;
     flex: 1;
@@ -23,6 +25,10 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      .activeClass {
+        color: cornflowerblue;
+      }
 
       :hover {
         cursor: pointer;

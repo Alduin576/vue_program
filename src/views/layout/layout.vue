@@ -6,7 +6,7 @@
         <h1>{{ zh_title }}&nbsp;&nbsp;{{ en_title }}</h1>
       </div>
       <div class="header-right">
-        <div v-for="(item,index) in menuDate" :key="index" @click="changeMenu(item,index)">
+        <div v-for="(item,index) in menuDate" :key="index" @click="changeMenu(item,index)" :class="menuIndex === index ? 'activeClass' : ''">
           {{item.name}}
         </div>
       </div>
@@ -34,15 +34,19 @@ export default {
   methods: {
     changeMenu (item, index) {
       if (index === 0) {
+        this.menuIndex = 0
         this.$router.push({ path: '/homepage' })
       }
       if (index === 1) {
+        this.menuIndex = 1
         this.$router.push({ path: '/dataCenter' })
       }
       if (index === 2) {
+        this.menuIndex = 2
         this.$router.push({ path: '/serviceCenter' })
       }
       if (index === 3) {
+        this.menuIndex = 3
         this.$router.push({ path: '/personalCenter' })
       }
       if (index === 4) {
