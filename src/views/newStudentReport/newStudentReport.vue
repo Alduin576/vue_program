@@ -20,7 +20,7 @@
             <el-input v-model="reportForm.studentName"></el-input>
           </el-form-item>
           <el-form-item label="所属学院">
-            <el-select v-model="reportForm.academy" placeholder="请选择活动区域">
+            <el-select v-model="reportForm.academy" placeholder="所属学院">
               <el-option v-for="(item,index) in academyData" :key="index" :label="item.name" :value="item.academyCode"></el-option>
             </el-select>
           </el-form-item>

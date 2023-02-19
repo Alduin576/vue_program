@@ -9,6 +9,8 @@ const schoolInfo = () => import('@/views/schoolInfo/schoolIntro.vue') // 学校�
 const schoolBasic = () => import('@/views/schoolBasic/schoolBasic.vue')// 学校概况
 const reportAppoint = () => import('@/views/reportAppoint/reportAppoint.vue') //报道预约
 const newStudentReport = () => import('@/views/newStudentReport/newStudentReport.vue') //新生报道
+const notice = () => import('@/views/notice/notice.vue') //通知公告
+const dormReservation = () => import('@/views/dormReservation/dormReservation.vue')
 
 const routes = [
   {
@@ -21,7 +23,9 @@ const routes = [
       { path: '/schoolIntro', name: 'schoolInfo', component: schoolInfo },
       { path: '/schoolBasic', name: 'schoolBasic', component: schoolBasic },
       { path: '/reportAppoint', name: 'reportAppoint', component: reportAppoint },
-      { path: '/newStudentReport', name: 'newStudentReport', component: newStudentReport }
+      { path: '/newStudentReport', name: 'newStudentReport', component: newStudentReport },
+      { path: '/notice', name: 'notice', component: notice },
+      { path: '/dormReservation', name: 'dormReservation', component: dormReservation }
     ]
   }
 ]

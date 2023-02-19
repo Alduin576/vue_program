@@ -58,7 +58,7 @@ export default {
           break
         case 2:
           // 通知公告
-          this.$router.push({ path: '/announcement' })
+          this.$router.push({ path: '/notice' })
           break
       }
     }
